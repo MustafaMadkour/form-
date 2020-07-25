@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+		<title>Form</title>
+	</head>
+	<body>
+		<header>
+			<img src="images/logo.png" />
+    </header>
+    
+    <form>
+      <!-- Gender -->
+      <p>You are ...</p>
+      <input type="radio" id="male" name="gender"/>
+      <label for="male">Male</label></br>
+      <input type="radio" id="female" name="gender"/>
+      <label for="female">Female</label></br>
+
+      <!-- Interests -->
+      <p>Who is interested in ...</p>
+      <input type="checkbox" id="front"/>
+      <label for="front">Front-End Development</label></br>
+      <input type="checkbox" id="back"/>
+      <label for="back">Back-End Development</label></br>
+      <input type="checkbox" id="full"/>
+      <label for="full">Full-Stack Development</label></br>
+
+      <!-- Contact -->
+      <fieldset>
+        <legend>Contact info</legend>
+        <input type="email" placeholder="Email" required/>
+        <span class="tick"></span>
+        <input type="telephone" placeholder="Phone Number" required/>
+        <span class="tick"></span>
+      </fieldset>
+
+      <!-- Preferred -->
+      <p>How would you like be contacted?</p>
+      <select>
+        <option>By Email</option>
+        <option>By Phone</option>
+      </select>
+      <input type="submit" value="Join our community"/>
+    </form>
+	</body>
+</html>
